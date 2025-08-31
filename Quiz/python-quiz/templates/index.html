@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="app-title">Quiz</h1>
+      <div id="view-select">
+        <p>Select a quiz to begin:</p>
+        <div id="quiz-list" class="quiz-list"></div>
+      </div>
+
+      <div id="view-quiz" class="hidden">
+        <button id="back-button" class="link">← Back</button>
+        <h2 id="quiz-title"></h2>
+        <p id="quiz-description" class="muted"></p>
+        <div id="question-area"></div>
+        <div class="actions">
+          <button id="prev-question" class="button" disabled>Previous</button>
+          <button id="next-question" class="button">Next</button>
+        </div>
+      </div>
+
+      <div id="view-results" class="hidden">
+        <h2>Results</h2>
+        <p id="score"></p>
+        <div id="explanations"></div>
+        <button id="restart" class="button">Choose another quiz</button>
+      </div>
+    </div>
+
+    <script src="/static/app.js"></script>
+  </body>
+  </html>
+
+
